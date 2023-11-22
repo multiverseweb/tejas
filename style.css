@@ -1,0 +1,357 @@
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgba(0, 255, 251, 0.638);
+}
+
+body {
+    background-color: #1b1d29;
+    color: rgba(240, 248, 255, 0.875);
+    margin-left: 1%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    margin-top: -30px;
+}
+.middle {
+    position: absolute;
+    left: 26.5vw;
+    top: 0;
+    padding-top: 30px;
+}
+
+.table {
+    position: absolute;
+    left: 52vw;
+    top: 0;
+}
+
+.right {
+    height: 100vh;
+    width: 22vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #222533;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.photo {
+    width: 20vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    border-radius: 15px;
+}
+
+.category {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.text {
+    font-size: 45px;
+}
+
+.image {
+    height: 100vh;
+    margin-left: -20%;
+    margin-top: -17%;
+    transition-duration: 1s;
+    position: absolute;
+    z-index: -1;
+}
+
+.intro {
+    font-size: 22px;
+    margin-top: -25px;
+}
+
+hr {
+    background-color: #3c425c;
+    border: 0;
+    height: 1px;
+}
+
+.glass {
+    background-color: #232634a5;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    backdrop-filter: blur(2px);
+    width: 23vw;
+    z-index: 3;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.progress {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 30px;
+    transition-duration: 1s;
+    margin-top: -10px;
+    border: 4px dashed rgba(0, 0, 0, 0);
+    transform: rotate(-45deg);
+}
+
+.progress:hover {
+    filter: hue-rotate(90deg);
+}
+
+.language {
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 18px;
+    transform: rotate(45deg);
+}
+
+#python {
+    border-bottom-color: rgb(161, 220, 0);
+    border-right-color: rgb(56, 199, 0);
+    border-left-color: rgb(201, 220, 0);
+}
+
+#html {
+    border-bottom-color: rgba(255, 179, 0, 0.938);
+    border-right-color: rgb(255, 94, 0);
+    border-left-color: rgba(255, 213, 0, 0.727);
+    border-top: 0px dashed rgba(242, 255, 0, 0.21);
+}
+
+#css {
+    border-bottom-color: #0094d4;
+    border-right-color: #264de4;
+    border-left-color: #ebebeb;
+}
+
+#js {
+    border-bottom-color: rgba(170, 150, 0, 0);
+    border-right-color: rgb(255, 234, 0);
+}
+
+#c {
+    border-right-color: rgb(0, 128, 255);
+    border-bottom-color: rgb(195, 225, 255);
+}
+
+#markdown {
+    border-bottom-color: rgb(127, 138, 255);
+    border-right-color: cyan;
+    border-left-color: rgb(168, 175, 248);
+}
+
+#mysql {
+    border-bottom-color: #F29111;
+    border-right-color: rgb(0, 117, 143);
+    border-left-color: #ffb656;
+}
+
+/*===============footer=========================*/
+.fimage{
+    position: absolute;
+    height: 100px;
+    left: 50vw;
+    bottom:-40px;
+    opacity: 0.5;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 9vh;
+    width: 100vw;
+    background-color: #222533;
+    text-align: right;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.social {
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+#github{
+    filter: invert(1);
+}
+
+.graph {
+    opacity: 1;
+    transform: scale(0.6);
+    filter: brightness(2);
+    top: -15vh;
+    left: 10vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.icons {
+    margin-right: 30px;
+}
+
+#projects {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+}
+#projects>a{
+    transition-duration: 0.5s;
+    font-size: 18px;
+}
+#projects>a:hover{
+    transform:translateX(7px);
+}
+
+#type {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#skill {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    margin-right: 5px;
+}
+
+.python {
+    background-color: #F29111;
+}
+
+.mysql {
+    background-color: rgb(0, 117, 143);
+}
+
+.html {
+    background-color: rgb(209, 94, 0);
+}
+
+.css {
+    background-color: rgb(0, 112, 209);
+}
+
+.js {
+    background-color: rgb(255, 225, 0);
+}
+.cpp {
+    background-color: rgb(0, 123, 255);
+}
+.c {
+    background-color: rgb(0, 101, 209);
+}
+
+.markdown {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.certificate {
+    width: 21.5vw;
+    margin-left: 1vw;
+    transition-duration: 0.5s;
+    filter: brightness(0.8);
+}
+
+.certificate:hover {
+    filter: brightness(1);
+}
+
+#move {
+    margin-top: -10px;
+    position: absolute;
+    margin-left: -22.5vw;
+}
+
+#move:hover {
+    transform: rotate(-4deg);
+}
+
+a {
+    color: rgba(255, 255, 255, 0.94);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+/*=================================PROJECTS==============================*/
+.heading{
+    margin-top: 40px;
+    text-align: center;
+}
+.items{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.buttons{
+    text-align: right;
+}
+.ss{
+    width: 27vw;
+    border-radius: 15px;
+}
+.btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background: #1b1d29;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    color: #1b1d29;
+    background: white;
+}
+.design-line{
+    position: absolute;
+    width: 100vw;
+    left:0;
+    top:20vh;
+}
+#return{
+    background:#222533;
+    position: absolute;
+    bottom:3vw;
+    left:2vw;
+}
+#return:hover{
+    background: white;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+/*============================Side=====================*/
+.smallicon{
+    filter: invert(0.7);
+    height: 20px;
+    margin-left: 1vw;
+    display: block;
+    margin-right: 10px;
+}
+.normal{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}

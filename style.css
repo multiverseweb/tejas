@@ -438,6 +438,8 @@ a {
         text-align:center;
         border-radius: 15px 15px 0px 0px;
         width: 100vw;
+        background-color: #222533e1;
+        backdrop-filter: blur(7px);
     }
     .icons {
         margin-right: 0px;

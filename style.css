@@ -379,7 +379,7 @@ a {
         width: 35vw;
     }
     body {
-        background-color: ##14151e;
+        background-color: #14151e;
         color: rgba(240, 248, 255, 0.875);
         overflow-x: hidden;
         overflow-y: scroll;
@@ -394,7 +394,7 @@ a {
     }
     .image {
         top: -170px;
-        left: -150px;
+        left: -15px;
         overflow: hidden;
         width:100vw;
     }
@@ -424,10 +424,10 @@ a {
         padding: 8px;
         display: flex;
         flex-direction: row;
-        font-size: 1.5vh;
+        font-size: 1.8vh;
     }
     .normal{
-        font-size: 2.2vh;
+        font-size: 1.8vh;
     }
 
     footer {

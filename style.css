@@ -269,6 +269,7 @@ footer {
 
 .certificate {
     width: 21.5vw;
+    margin-top: 20px;
     margin-left: 1vw;
     transition-duration: 0.5s;
     filter: brightness(0.8);
@@ -279,7 +280,7 @@ footer {
 }
 
 #move {
-    margin-top: -10px;
+    margin-top: 10px;
     position: absolute;
     margin-left: -22.5vw;
 }
@@ -491,7 +492,7 @@ a {
         width: 75vw;
     }
     #move {
-        margin-top: -10px;
+        margin-top: 10px;
         position: absolute;
         margin-left: -77.5vw;
     }

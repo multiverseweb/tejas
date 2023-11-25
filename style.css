@@ -384,6 +384,11 @@ a {
         overflow-x: hidden;
         overflow-y: scroll;
     }
+
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
     .container{
         overflow-x: hidden;
     }
@@ -488,5 +493,17 @@ a {
         margin-top: -10px;
         position: absolute;
         margin-left: -77.5vw;
+    }
+    .languages{
+        margin-left: -20px;
+    }
+    #skill{
+        margin-top: 20px;
+    }
+    .text{
+        font-size: 35px;
+    }
+    .intro{
+        font-size: 20px;
     }
 }

@@ -379,7 +379,7 @@ a {
         width: 35vw;
     }
     body {
-        background-color: #1b1d29;
+        background-color: ##14151e;
         color: rgba(240, 248, 255, 0.875);
         overflow-x: hidden;
         overflow-y: scroll;
@@ -396,7 +396,7 @@ a {
         top: -170px;
         left: -150px;
         overflow: hidden;
-        width:1vw;
+        width:100vw;
     }
 
     .glass {
@@ -424,7 +424,7 @@ a {
         padding: 8px;
         display: flex;
         flex-direction: row;
-        font-size: 1.8vh;
+        font-size: 1.5vh;
     }
     .normal{
         font-size: 2.2vh;

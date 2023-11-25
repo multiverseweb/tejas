@@ -1,6 +1,6 @@
 ::selection {
     color: rgb(0, 0, 0);
-    background: rgba(0, 255, 251, 0.638);
+    background: rgba(0, 255, 251, 0.538);
 }
 
 body {
@@ -396,6 +396,7 @@ a {
         top: -170px;
         left: -150px;
         overflow: hidden;
+        display:none;
     }
 
     .glass {

@@ -372,6 +372,8 @@ a {
     font-size: 18px;
 }
 
+
+/*==========================RESPONSIVE===================================*/
 @media screen and (max-width: 480px) {
     .photo{
         width: 40vw;

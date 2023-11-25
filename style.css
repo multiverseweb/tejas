@@ -376,7 +376,7 @@ a {
 /*==========================RESPONSIVE===================================*/
 @media screen and (max-width: 480px) {
     .photo{
-        width: 40vw;
+        width: 35vw;
     }
     body {
         background-color: #1b1d29;
@@ -423,7 +423,7 @@ a {
         padding: 15px;
         display: flex;
         flex-direction: row;
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
     .normal{
         font-size: 2.2vh;
@@ -506,4 +506,6 @@ a {
     .intro{
         font-size: 20px;
     }
+    .smallicon {
+        height: 1.8vh;
 }

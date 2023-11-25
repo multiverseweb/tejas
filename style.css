@@ -396,7 +396,7 @@ a {
         top: -170px;
         left: -150px;
         overflow: hidden;
-        display:none;
+        width:0.8vw;
     }
 
     .glass {

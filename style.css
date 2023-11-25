@@ -512,4 +512,8 @@ a {
     }
     .smallicon {
         height: 1.8vh;
+    }
+    .middle {
+    padding-top: 0px;
+    }
 }

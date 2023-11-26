@@ -1,15 +1,15 @@
 ::selection {
     color: rgb(0, 0, 0);
-    background: rgba(0, 255, 251, 0.538);
+    background: rgba(0, 255, 251, 0.638);
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #1b1d29;
+    background-color: #14151e;
     color: rgba(240, 248, 255, 0.875);
     margin-left: 1%;
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
     position: absolute;
     left: 26.5vw;
     top: 0;
+    padding-top: 30px;
 }
 
 .table {
@@ -58,7 +59,6 @@ body {
 
 .text {
     font-size: 45px;
-    
 }
 
 .image {
@@ -73,15 +73,12 @@ body {
 .intro {
     font-size: 22px;
     margin-top: -25px;
-    overflow-wrap: break-word;
-    width:22vw;
 }
 
 hr {
     background-color: #3c425c;
     border: 0;
-    height: 2px;
-    margin-top:-10px;
+    height: 1px;
 }
 
 .glass {
@@ -89,7 +86,7 @@ hr {
     padding: 15px;
     border-radius: 15px;
     margin-top: 15px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     width: 23vw;
     z-index: 3;
 }
@@ -210,7 +207,7 @@ footer {
 }
 
 .icons {
-    margin-right: 7px;
+    margin-right: 30px;
 }
 
 
@@ -273,7 +270,6 @@ footer {
 
 .certificate {
     width: 21.5vw;
-    margin-top: 20px;
     margin-left: 1vw;
     transition-duration: 0.5s;
     filter: brightness(0.8);
@@ -284,7 +280,7 @@ footer {
 }
 
 #move {
-    margin-top: 10px;
+    margin-top: -10px;
     position: absolute;
     margin-left: -22.5vw;
 }
@@ -377,26 +373,27 @@ a {
     font-size: 18px;
 }
 
-
-/*==========================RESPONSIVE===================================*/
 @media screen and (max-width: 480px) {
-    .photo{
-        width: 35vw;
+    .photo {
+        width: 40vw;
     }
+
+
     body {
         background-color: #14151e;
         color: rgba(240, 248, 255, 0.875);
         overflow-x: hidden;
         overflow-y: scroll;
     }
-
     html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-    .container{
+        max-width: 100%;
         overflow-x: hidden;
     }
+
+    .container {
+        overflow-x: hidden;
+    }
+
     .image {
         top: 20px;
         left: -50px;
@@ -424,28 +421,31 @@ a {
         backdrop-filter: blur(2px);
         position: relative;
         left: 5vw;
-        width: 85vw;
+        width: 80vw;
         height: auto;
-        padding: 8px;
+        padding: 15px;
         display: flex;
         flex-direction: row;
-        font-size: 1.8vh;
+        font-size: 2.2vh;
     }
-    .normal{
-        font-size: 1.8vh;
+
+    .normal {
+        font-size: 2.2vh;
     }
 
     footer {
-        position:fixed;
-        text-align:center;
+        position: fixed;
+        text-align: center;
         border-radius: 15px 15px 0px 0px;
         width: 100vw;
         background-color: #222533e1;
         backdrop-filter: blur(7px);
     }
+
     .icons {
         margin-right: 0px;
     }
+
     .fimage {
         left: 80vw;
         bottom: 50px;
@@ -457,13 +457,14 @@ a {
         margin-top: 40px;
         text-align: center;
     }
-    
+
     .items {
         flex-direction: column;
         justify-content: center;
         margin-left: 2.5vw;
     }
-    .items>.glass{
+
+    .items>.glass {
         width: 80vw;
     }
 
@@ -471,39 +472,49 @@ a {
         width: 90vw;
         border-radius: 15px;
     }
+
     .design-line {
         display: none;
     }
+
     #return {
         position: relative;
         margin-top: 40px;
     }
-    
+
     .bg {
         position: fixed;
     }
+
     #projects {
         margin-top: 44px;
         width: 80vw;
         margin-left: 5vw;
     }
-    .text, .intro{
+
+    .text,
+    .intro {
         margin-left: 5vw;
         isolation: isolate;
-        mix-blend-mode: difference;
+        mix-blend-mode:difference;
     }
+
     .graph {
         display: none;
     }
+
     .certificate {
         margin-left: 3vw;
         width: 75vw;
     }
+
     #move {
-        margin-top: 10px;
+        margin-top: -10px;
         position: absolute;
         margin-left: -77.5vw;
     }
+
+
     .languages{
         margin-left: -20px;
     }
@@ -511,15 +522,12 @@ a {
         margin-top: 20px;
     }
     .text{
-        margin-top:60px;
-        font-size: 30px;
+        font-size: 35px;
     }
     .intro{
-        font-size: 15px;
-        overflow-wrap: break-word;
-    width:90vw;
+        font-size: 20px;
     }
-    .smallicon {
-        height: 1.8vh;
+    .certi{
+        width: 90vw;
     }
 }

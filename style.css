@@ -25,7 +25,6 @@ body {
     position: absolute;
     left: 26.5vw;
     top: 0;
-    padding-top: 30px;
 }
 
 .table {
@@ -521,8 +520,5 @@ a {
     }
     .smallicon {
         height: 1.8vh;
-    }
-    .middle {
-    padding-top: 0px;
     }
 }

@@ -405,7 +405,7 @@ a {
     }
 
     .image {
-        top: 10px;
+        top: 0px;
         left: -40px;
         overflow: hidden;
         max-width: 100vw;

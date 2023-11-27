@@ -426,11 +426,11 @@ a {
         padding: 15px;
         display: flex;
         flex-direction: row;
-        font-size: 2.2vh;
+        font-size: 1.8vh;
     }
 
     .normal {
-        font-size: 2.2vh;
+        font-size: 1.8vh;
     }
 
     footer {

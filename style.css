@@ -72,6 +72,8 @@ body {
 .intro {
     font-size: 22px;
     margin-top: -25px;
+    word-wrap: break-word;
+    width: 23vw;
 }
 
 hr {
@@ -207,7 +209,7 @@ footer {
 }
 
 .icons {
-    margin-right: 30px;
+    margin-right: 8px;
 }
 
 
@@ -224,7 +226,7 @@ footer {
 #type {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #skill {
@@ -537,11 +539,15 @@ a {
     #skill{
         margin-top: 20px;
     }
+    #type{
+        margin-top: 10px;
+    }
     .text{
         font-size: 30px;
     }
     .intro{
         font-size: 15px;
+        width: 90vw;
     }
     .certi{
         width: 90vw;

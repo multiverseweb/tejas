@@ -9,27 +9,31 @@ body {
     margin-left: 1%;
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 1;
 }
-
+b{
+    font-weight: 500;
+}
 .container {
     display: flex;
     flex-direction: column;
 }
 
 .left {
-    margin-top: -30px;
+    margin-top: -50px;
+    margin-left: 0.2vw;
 }
 
 .middle {
     position: absolute;
-    left: 26.5vw;
+    left: 26.7vw;
     top: 0;
 }
 
-.table {
+.last {
     position: absolute;
-    left: 52vw;
+    left: 52.3vw;
     top: 0;
 }
 
@@ -43,6 +47,7 @@ body {
     z-index: 2;
     border-radius: 15px;
 }
+
 
 .photo {
     width: 20vw;
@@ -71,9 +76,10 @@ body {
 
 .intro {
     font-size: 22px;
-    margin-top: -25px;
+    margin-top: -40px;
     word-wrap: break-word;
     width: 23vw;
+    line-height: 25px;
 }
 
 hr {
@@ -91,6 +97,7 @@ hr {
     backdrop-filter: blur(4px);
     width: 23vw;
     z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .languages {
@@ -174,9 +181,9 @@ hr {
 footer {
     position: absolute;
     bottom: 0;
-    left: 0;
-    height: 9vh;
-    width: 100vw;
+    right: 0;
+    height: 35vh;
+    width: 22vw;
     background-color: #222533;
     text-align: right;
     z-index: 2;
@@ -198,6 +205,52 @@ footer {
     filter: invert(1);
 }
 
+.contact{
+    display: none;
+}
+form{
+    position: absolute;
+    top:5px;
+    background-color: #14151e;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    right: 1vw;
+    width: 18vw;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+input{
+    margin: 0.3vw;
+    height: 30px;
+    background-color:#222533;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 0.5s;
+}
+input:hover{
+    background-color:#17a68ad1;
+    color: #000000;
+}
+.send{
+    height: 30px;
+    background-color:#005f6b;
+    border: none;
+    border-radius: 3px;
+    width: 50px;
+    align-self:self-end;
+    margin: 0.3vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 0.5s;
+}
+.send:hover{
+    background-color: #00bed7;
+    color: #000000;
+}
+
 .graph {
     opacity: 1;
     transform: scale(0.6);
@@ -209,7 +262,12 @@ footer {
 }
 
 .icons {
-    margin-right: 8px;
+    right: 8px;
+    bottom: 8px;
+    position: absolute;
+}
+#projects{
+    margin-top: 30px;
 }
 
 
@@ -275,6 +333,7 @@ footer {
     margin-left: 1vw;
     transition-duration: 0.5s;
     filter: brightness(0.8);
+    margin-top: 20px;
 }
 
 .certificate:hover {
@@ -282,7 +341,7 @@ footer {
 }
 
 #move {
-    margin-top: -10px;
+    margin-top: 10px;
     position: absolute;
     margin-left: -22.5vw;
 }
@@ -408,24 +467,26 @@ a {
 
     .image {
         top: 0px;
-        left: -40px;
+        left: -50px;
         overflow: hidden;
         max-width: 100vw;
+        position: fixed;
     }
 
     .glass {
         width: 80vw;
-    }
+        backdrop-filter: blur(9px);
+}
 
     .middle {
         position: relative;
         left: 5vw;
     }
 
-    .table {
+    .last {
         position: relative;
         left: 5vw;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
 
     .right {
@@ -448,22 +509,7 @@ a {
         font-size: 1.8vh;
     }
 
-    footer {
-        position: fixed;
-        text-align: center;
-        border-radius: 15px 15px 0px 0px;
-        width: 100vw;
-        background-color: #222533e1;
-        backdrop-filter: blur(7px);
-    }
-
-    .icons {
-        margin-right: 0px;
-    }
-
     .fimage {
-        left: 80vw;
-        bottom: 50px;
         display: none;
     }
 
@@ -508,6 +554,12 @@ a {
         width: 80vw;
         margin-left: 5vw;
     }
+    .left{
+        margin-top: -20px;
+    }
+    .intro{
+        margin-top: -20px;
+    }
 
     .text,
     .intro {
@@ -551,5 +603,42 @@ a {
     }
     .certi{
         width: 90vw;
+    }
+    .contact{
+        display: block;
+    }
+    footer {
+        position:relative;
+        height: 60vh;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+        width: 100vw;
+        background-color: #222533e1;
+        backdrop-filter: blur(7px);
+    }
+
+    .icons {
+        position: relative;
+        margin-top: 37vh;
+    }
+
+    form{
+        width: 80vw;
+        left:7vw;
+        margin-top:55px;
+    }
+    input{
+        margin: 1vw;
+        background-color: #000000;
+    }
+    .send{
+        margin: 1vw;
+    }
+    .credits{
+        position: absolute;
+        bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
     }
 }

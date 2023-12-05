@@ -204,6 +204,9 @@ footer {
 #github {
     filter: invert(1);
 }
+.credits{
+    display: none;
+}
 
 .contact{
     display: none;
@@ -282,6 +285,11 @@ input:hover{
 }
 
 #type {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#symbol {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -379,7 +387,7 @@ a {
 }
 
 .btn {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
     background: #1b1d29;
     color: white;
@@ -467,9 +475,9 @@ a {
 
     .image {
         top: 0px;
-        left: -50px;
+        left: -70px;
         overflow: hidden;
-        max-width: 100vw;
+        max-width: 120vw;
         position: fixed;
     }
 
@@ -592,6 +600,9 @@ a {
         margin-top: 20px;
     }
     #type{
+        margin-top: -7px;
+    }
+    #symbol{
         margin-top: 10px;
     }
     .text{
@@ -635,6 +646,7 @@ a {
         margin: 1vw;
     }
     .credits{
+        display: block;
         position: absolute;
         bottom: 5vh;
         left: 50%;

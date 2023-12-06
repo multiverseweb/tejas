@@ -574,6 +574,7 @@ a {
         margin-left: 5vw;
         isolation: isolate;
         mix-blend-mode:difference;
+        font-weight: 300;
     }
 
     .graph {

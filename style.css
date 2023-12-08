@@ -449,12 +449,12 @@ a {
 
 .normal {
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
 
 .more{
-    height: 40vh;
+    height: 30vh;
 }
 .align{
     width:21vw;
@@ -469,10 +469,15 @@ a {
 }
 .vr{
     width: 1px;
-    height: 80vh;
+    height: 70vh;
     background:linear-gradient(#00000000,#00000000, #3c425c,#00000000,#00000000,#3c425c,#00000000);
     margin-right: 20px;
-    margin-top: -9px;
+    margin-left: 4px;
+}
+#eduvr{
+    height: 270px;
+    width: 2px;
+    background:linear-gradient(#00000000,#00000000, #3c425c,#00000000,#00000000,#3c425c,#00000000,#00000000,#3c425c,#00000000,#00000000);
 }
 
 /*======================================RESPONSIVE=======================================*/

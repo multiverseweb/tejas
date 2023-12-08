@@ -469,8 +469,7 @@ a {
     margin-left: 20px;
 }
 .vr{
-    position: absolute;
-    width: 1px;
+    width: 2px;
     background:linear-gradient(#00000000,#00000000, #3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000);
     margin-left: 4px;
 }

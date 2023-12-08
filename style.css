@@ -466,18 +466,22 @@ a {
 .parts{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 .vr{
+    position: absolute;
     width: 1px;
-    height: 70vh;
-    background:linear-gradient(#00000000,#00000000, #3c425c,#00000000,#00000000,#3c425c,#00000000);
-    margin-right: 20px;
+    height: 87%;
+    background:linear-gradient(#00000000,#00000000, #3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000);
     margin-left: 4px;
 }
 #eduvr{
-    height: 270px;
+    height: 87%;
     width: 2px;
-    background:linear-gradient(#00000000,#00000000, #3c425c,#00000000,#00000000,#3c425c,#00000000,#00000000,#3c425c,#00000000,#00000000);
+    background:linear-gradient(#00000000,#00000000,#00000000, #3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#00000000,#00000000);
+}
+.timeline{
+    margin-left: -23px;
 }
 
 /*======================================RESPONSIVE=======================================*/
@@ -543,7 +547,7 @@ a {
     }
 
     .normal {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .fimage {

@@ -470,14 +470,11 @@ a {
 }
 .vr{
     position: absolute;
-    width: 1px;
-    height: 87%;
+    width: 2px;
     background:linear-gradient(#00000000,#00000000, #3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000);
     margin-left: 4px;
 }
 #eduvr{
-    height: 87%;
-    width: 2px;
     background:linear-gradient(#00000000,#00000000,#00000000, #3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#00000000,#00000000);
 }
 .timeline{
@@ -547,7 +544,7 @@ a {
     }
 
     .normal {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .fimage {

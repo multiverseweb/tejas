@@ -470,7 +470,7 @@ a {
 }
 .vr{
     position: absolute;
-    width: 2px;
+    width: 1px;
     background:linear-gradient(#00000000,#00000000, #3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000,#00000000,#3c425c,#3c425c,#3c425c,#3c425c,#3c425c,#00000000);
     margin-left: 4px;
 }

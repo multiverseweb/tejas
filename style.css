@@ -591,7 +591,9 @@ a {
     .glass {
         width: 80vw;
         backdrop-filter: blur(9px);
-    }
+        background-color: #2326345e;
+        border-radius: 5px;
+        }
 
     .middle {
         position: relative;

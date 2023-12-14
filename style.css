@@ -94,7 +94,6 @@ b {
     transition-duration: 1s;
     position: fixed;
     z-index: -1;
-    transition-duration: 2s;
 }
 
 .intro {
@@ -536,12 +535,17 @@ a {
 
     .current {
         position: absolute;
-        top: 20px;
+        top: 15px;
         right: 20px;
         padding: 10px;
         z-index: 10;
         background-color: #00000000;
         border: none;
+    }
+
+    .tg {
+        filter: invert(0.7);
+        height: 20px;
     }
 
     #right {
@@ -741,7 +745,7 @@ a {
 
     footer {
         position: relative;
-        left:-10px;
+        left: -10px;
         height: 60vh;
         text-align: center;
         border-radius: 15px 15px 0px 0px;

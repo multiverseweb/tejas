@@ -551,8 +551,8 @@ a {
 .endgap {
     position: relative;
     width: 100vw;
-    bottom: 0;
-    margin-top: 90px;
+    bottom: 20px;
+    margin-top: 160px;
     height: 20px;
     display: flex;
     flex-direction: row;

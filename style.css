@@ -2,6 +2,9 @@
     color: rgb(0, 0, 0);
     background: rgba(255, 187, 0, 0.415);
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #000000;
@@ -247,7 +250,7 @@ form {
     flex-direction: column;
     right: 1vw;
     width: 18vw;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -420,7 +423,7 @@ a {
 
 .ss {
     width: 27vw;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .btn {
@@ -429,7 +432,7 @@ a {
     background: #13151d;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 15px;
     transition-duration: 0.5s;
 }
@@ -853,3 +856,23 @@ a {
         margin-top: 10px;
     }
 }
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 10px;
+    right: 10px; 
+    z-index: 99; 
+    border: none;
+    background-color: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 15px;
+  }
+  
+  #myBtn:hover {
+    background-color: #dcdcdc28; /* Add a dark-grey background on hover */
+  }

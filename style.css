@@ -587,7 +587,6 @@ a {
         position: fixed;
         transition-duration: 3s;
     }
-
     .glass {
         width: 80vw;
         backdrop-filter: blur(9px);
@@ -611,8 +610,8 @@ a {
     }
 
     .right {
-        background-color: #222533dc;
-        backdrop-filter: blur(2px);
+        background-color: #23263481;
+        backdrop-filter: blur(5px);
         position: fixed;
         left: 5vw;
         width: 85vw;
@@ -621,6 +620,7 @@ a {
         flex-direction: row;
         font-size: 1.8vh;
         margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     }
 
     .smallicon {

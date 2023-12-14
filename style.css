@@ -527,7 +527,7 @@ a {
     .cover {
         display: block;
         position: fixed;
-        transition-duration: 3s;
+        transition-duration: 2s;
     }
 
     .photo {
@@ -602,7 +602,6 @@ a {
 
     .left {
         padding-top: 200px;
-        z-index: 30;
     }
 
     .right {

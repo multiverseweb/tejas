@@ -90,7 +90,7 @@ b {
     width: 20vw;
     margin-top: 1vw;
     margin-left: 1vw;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .category {
@@ -439,13 +439,13 @@ a {
 
 .btn {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     background: #13151d;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 15px;
-    transition-duration: 0.5s;
+    padding:10px;
+    transition-duration: 0.3s;
 }
 
 .btn:hover {
@@ -624,6 +624,17 @@ a {
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
+    .by{
+        position: fixed;
+        bottom: 60px;
+        left:50%;
+        transform: translate(-50%);
+        z-index: 60;
+        opacity: 0;
+        transition-duration: 0.3s;
+        transition-delay: 0.5s;
+        font-size: 12px;
+    }
     .navbar{
         display: block;
     }
@@ -660,11 +671,11 @@ a {
 
     #show:hover .hamburger1{
         transform: rotate(45deg);
-        transform-origin: 3% 0%;
+        transform-origin: 2% 0%;
     }
     #show:hover .hamburger3{
         transform: rotate(-45deg);
-        transform-origin: 3% 0%;
+        transform-origin: 2% 0%;
     }
 
     .cover {

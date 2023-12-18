@@ -12,12 +12,19 @@
 <body>
     <div class="blind" id="blind"></div>
     <div class="navbar">
-        <button class="current" id="show" onclick="show()"><img
-                src="https://i.pinimg.com/originals/b8/7f/43/b87f43c1303df24945ca6740ee1c1cbc.png" class="tg"></button>
+        <a href="index.html" class="tglink"><img src="tglogo.png" class="tglogo"></a>
+        <button class="rightlink" id="show" onclick="show()">
+            <div class="hamburger1" id="hr1"></div>
+            <div class="hamburger2" id="hr2"></div>
+            <div class="hamburger3" id="hr3"></div>
+        </button>
+                <button class="rightlink" id="hide" onclick="hide()"></button>
     </div>
-    <button class="current" id="hide" onclick="hide()"><img src="close.png" class="tg"></button>
+
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="top.png" class="top"></button>
+
+
     <img src="earth.png" class="cover" id="cover">
     </div>
     <img src="blob.svg" class="image" id="blob">

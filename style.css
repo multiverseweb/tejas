@@ -620,11 +620,51 @@ a {
     transition-duration: 0.3s;
   }
 
+
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
     .navbar{
         display: block;
+    }
+    .hamburger1{
+        width: 25px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 7px;
+        transition-duration: 0.5s;
+      }
+      .hamburger2{
+        top: 10px;
+        position: absolute;
+        width: 25px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 7px;
+        transition-duration: 0.5s;
+        right:6px;
+      }
+      .hamburger3{
+        position: absolute;
+        top: 19px;
+        width: 25px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 7px;
+        transition-duration: 0.5s;
+      }
+    #show:hover .hamburger2{
+        right:-35px;
+        opacity: 0;
+    }
+
+    #show:hover .hamburger1{
+        transform: rotate(45deg);
+        transform-origin: 3% 0%;
+    }
+    #show:hover .hamburger3{
+        transform: rotate(-45deg);
+        transform-origin: 3% 0%;
     }
 
     .cover {
@@ -636,20 +676,30 @@ a {
     .photo {
         width: 35vw;
     }
-
-    .current {
+    .tglink{
         position: absolute;
-        top: 7px;
+        top:5px;
+        left: 5px;
+    }
+    .tglogo{
+        position: absolute;
+        top:5px;
+        left:10px;
+        height: 27px;
+        filter: brightness(1.5);
+    }
+    .rightlink{
+        position: absolute;
         right: 7px;
-        padding: 10px;
-        z-index: 100;
-        background-color: #00000000;
+        top:7px;
+        background-color: #13151d00;
         border: none;
     }
-
-    .tg {
-        filter: invert(0.7);
-        height: 20px;
+    .rightlogo{
+        position: absolute;
+        height: 25px;
+        top:7px;
+        right: 7px;
     }
 
     #right {
@@ -659,6 +709,8 @@ a {
     #hide {
         display: none;
         position: fixed;
+        height: 30px;
+        width: 30px;
     }
 
     #show {

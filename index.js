@@ -1,5 +1,5 @@
 function show() {
-    document.getElementById("blind").style.height= "100vh";
+    document.getElementById("blind").style.height= "120vh";
     document.getElementById("right").style.opacity= 1;
     document.getElementById("by").style.opacity= 1;
     document.getElementById("by").style.transitionDelay= "0.5s";

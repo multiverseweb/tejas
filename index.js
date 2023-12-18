@@ -1,6 +1,8 @@
 function show() {
     document.getElementById("blind").style.height= "100vh";
     document.getElementById("right").style.opacity= 1;
+    document.getElementById("by").style.opacity= 1;
+    document.getElementById("by").style.transitionDelay= "0.5s";
     document.getElementById("right").style.left= "5vw";
     document.getElementById("right").style.display= "flex";
     document.getElementById("hide").style = "display:block";
@@ -8,6 +10,8 @@ function show() {
 function hide() {
     document.getElementById("blind").style.height= "0";
     document.getElementById("right").style.opacity= 0;
+    document.getElementById("by").style.opacity= 0;
+    document.getElementById("by").style.transitionDelay= "0s";
     document.getElementById("right").style.left= "-25vw";
     document.getElementById("show").style = "display:block";
     document.getElementById("hide").style = "display:none";

@@ -4,7 +4,6 @@ function show() {
     document.getElementById("right").style.left= "5vw";
     document.getElementById("right").style.display= "flex";
     document.getElementById("hide").style = "display:block";
-    document.getElementById("show").style = "display:none";
 }
 function hide() {
     document.getElementById("blind").style.height= "0";

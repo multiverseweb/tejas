@@ -19,7 +19,18 @@ body {
 ::-webkit-scrollbar {
     width: 0;
 }
-
+.navbar{
+    display: none;
+    backdrop-filter: blur(5px);
+    background-color: #23263481;
+    border-radius: 0px 0px 5px 5px;
+    width: 100vw;
+    height: 50px;
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
 #show {
     display: none;
 }
@@ -30,7 +41,7 @@ body {
 
 .cover {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100vw;
     display: none;
@@ -266,7 +277,7 @@ input {
 }
 
 input:hover {
-    background-color: #17a68ad1;
+    background-color: #b2b2b22b;
     color: #000000;
 }
 
@@ -572,7 +583,6 @@ a {
         opacity: 0;
     }
 }
-
 .top{
     height: 25px;
 }
@@ -581,24 +591,41 @@ a {
     position: fixed; 
     bottom: 10px;
     right:23vw;
-    z-index: 99; 
+    z-index: 40; 
     border: none;
-    background-color: rgba(255, 255, 255, 0.03); 
-    backdrop-filter: blur(10px);
+    background-color: #23263481; 
+    backdrop-filter: blur(5px);
     color: white;
     cursor: pointer;
     padding: 5px; 
     border-radius: 5px; 
     font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     transition-duration: 0.3s;
   }
+  
   #myBtn:hover {
     background-color: #dcdcdc28; /* Add a dark-grey background on hover */
+  }
+
+  .blind{
+    top:0;
+    left:0;
+    z-index: 50;
+    position: fixed;
+    background-color: #00000059;
+    backdrop-filter: blur(10px);
+    height: 0;
+    width: 100vw;
+    transition-duration: 0.3s;
   }
 
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
+    .navbar{
+        display: block;
+    }
 
     .cover {
         display: block;
@@ -612,10 +639,10 @@ a {
 
     .current {
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 7px;
+        right: 7px;
         padding: 10px;
-        z-index: 10;
+        z-index: 100;
         background-color: #00000000;
         border: none;
     }
@@ -684,13 +711,15 @@ a {
     }
 
     .left {
-        padding-top: 200px;
+        padding-top: 230px;
     }
 
     .right {
+        z-index: 55;
         background-color: #23263481;
         backdrop-filter: blur(5px);
         position: fixed;
+        top:50px;
         left: 5vw;
         width: 85vw;
         height: auto;
@@ -698,6 +727,7 @@ a {
         flex-direction: row;
         font-size: 1.8vh;
         margin-top: 10px;
+        transition-duration: 0.4s;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     }
 

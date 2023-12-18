@@ -573,9 +573,11 @@ a {
     }
 }
 
+.top{
+    height: 25px;
+}
 #myBtn {
-    opacity:0;
-    transition-duration:0.3s;
+    opacity: 0;
     position: fixed; 
     bottom: 10px;
     right:23vw;
@@ -585,11 +587,11 @@ a {
     backdrop-filter: blur(10px);
     color: white;
     cursor: pointer;
-    padding: 10px; 
+    padding: 5px; 
     border-radius: 5px; 
     font-size: 15px;
+    transition-duration: 0.3s;
   }
-  
   #myBtn:hover {
     background-color: #dcdcdc28; /* Add a dark-grey background on hover */
   }

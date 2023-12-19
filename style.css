@@ -620,11 +620,16 @@ a {
     transition-duration: 0.3s;
   }
 
+  .by{
+    display: none;
+  }
+
 
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
     .by{
+        display: block;
         position: fixed;
         bottom: 60px;
         left:50%;
@@ -976,4 +981,3 @@ a {
         right:10px;
     }
 }
-

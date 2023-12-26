@@ -1,7 +1,7 @@
 function copy (){
     navigator.clipboard.writeText("https://multiverseweb.github.io/tejas/");
     document.getElementById("clipboard").src="check.png";
-    document.getElementById("copy").innerHTML="Copied!&nbsp;✓";
+    document.getElementById("copy").innerHTML="Copied!&nbsp;";
 }
 function show2() {
     document.getElementById("blind").style.height = "100vh";

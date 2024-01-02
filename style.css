@@ -180,7 +180,8 @@ b {
 }
 
 .left {
-    margin-top: -50px;
+    position: absolute;
+    margin-top: 10px;
     margin-left: 0.2vw;
 }
 
@@ -226,14 +227,6 @@ b {
     font-size: 45px;
 }
 
-.image {
-    height: 100vh;
-    margin-left: -20%;
-    margin-top: -17%;
-    transition-duration: 30s;
-    position: fixed;
-    z-index: -1;
-}
 
 .intro {
     font-size: 22px;
@@ -333,14 +326,6 @@ hr {
 }
 
 /*===============footer=========================*/
-.fimage {
-    position: absolute;
-    height: 100px;
-    left: 50vw;
-    bottom: -40px;
-    opacity: 0.5;
-}
-
 footer {
     position: fixed;
     bottom: 0;
@@ -385,6 +370,7 @@ form {
     flex-direction: column;
     right: 1vw;
     width: 18vw;
+    z-index: -10;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -684,7 +670,9 @@ a {
     animation-direction: linear;
     animation-name: loading;
 }
-
+.box{
+    margin-bottom: 780px;
+}
 .endgap {
     position: relative;
     width: 100vw;
@@ -712,7 +700,7 @@ a {
 }
 
 .top {
-    height: 25px;
+    height: 22px;
 }
 
 #myBtn {
@@ -720,13 +708,13 @@ a {
     position: fixed;
     bottom: 10px;
     right: 23vw;
-    z-index: 1;
+    z-index: 10;
     border: none;
     background-color: #23263481;
     backdrop-filter: blur(5px);
     color: white;
     cursor: pointer;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     font-size: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
@@ -746,6 +734,81 @@ code{
     display: none;
 }
 
+.pet{
+    height: 7px;
+    width: 7px;
+    background-color: #006151;
+    position: fixed;
+    border-radius: 2px;
+    z-index: -10;
+    animation-iteration-count: infinite;
+    animation-name: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 60s;
+}
+@keyframes move{
+    0%{
+        top:50vh;
+        left:-10vw;
+        opacity: 0;
+    }
+    10%{
+        top:80vh;
+        left:50vw;
+        opacity: 1;
+        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+    }
+    20%{
+        top:95vh;
+        left:0vw;
+        opacity: 1;
+        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+    }
+    30%{
+        top:60vh;
+        left:96vw;
+        opacity: 1;
+        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+    }
+    40%{
+        top:80vh;
+        left:95vw;
+        opacity: 0.3;
+        box-shadow: none;
+    }
+    50%{
+        opacity: 0;
+        box-shadow: 0 0 20px #006151;
+    }
+    60%{
+        top:0;
+        left:95vw;
+        opacity: 0.2;
+        box-shadow: none;
+    }
+    70%{
+        top:20vh;
+        left:1vw;
+        opacity: 1;
+        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+    }
+    80%{
+        top:20vh;
+        left:50vw;
+        box-shadow: 0 0 10px #006151;
+    }
+    90%{
+        top:60vh;
+        left:30vw;
+        box-shadow: 0 0 20px #006151,0 0 20px #006151;
+    }
+    100%{
+        top:50vh;
+        left:-10vw;
+        opacity: 0;
+        box-shadow: none;
+    }
+}
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
@@ -761,6 +824,9 @@ code{
     body {
         max-width: 100%;
         overflow-x: hidden;
+    }
+    .box{
+        margin-bottom: 0;
     }
     .qr{
         height: 25vw;
@@ -927,15 +993,6 @@ code{
         overflow-x: hidden;
     }
 
-    .image {
-        top: 45vw;
-        left: 170px;
-        overflow: hidden;
-        max-width: 120vw;
-        position: fixed;
-        transition-duration: 3s;
-    }
-
     .glass {
         width: 80vw;
         backdrop-filter: blur(9px);
@@ -1035,6 +1092,7 @@ code{
 
     .left {
         margin-top: -20px;
+        position: relative;
     }
 
     .intro {

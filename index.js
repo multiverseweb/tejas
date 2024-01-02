@@ -1,6 +1,6 @@
-function copy (){
+function copy() {
     navigator.clipboard.writeText("https://multiverseweb.github.io/tejas/");
-    document.getElementById("copy").innerHTML="Copied!&nbsp;✓";
+    document.getElementById("copy").innerHTML = "Copied!&nbsp;✓";
 }
 function show2() {
     document.getElementById("blind").style.height = "100vh";
@@ -46,14 +46,27 @@ function topFunction() {
 function changeCss() {
     var bodyElement = document.getElementById("body");
     var cover = document.getElementById("cover");
-    var blob = document.getElementById("blob");
     mybutton = document.getElementById("myBtn");
-    this.scrollY < 1 ? blob.style.top = "-17%" : blob.style.left = "45vw";
-    this.scrollY < 1 ? blob.style.left = "-20%" : blob.style.left = "170px";
     this.scrollY > 80 ? cover.style.opacity = 0 : cover.style.opacity = 1;
     this.scrollY > 200 ? myBtn.style.opacity = 1 : myBtn.style.opacity = 0;
-    this.scrollY > 1700 ? blob.style.left = "-100px" : blob.style.left = "170px";
-    this.scrollY > 1700 ? blob.style.top = "-35vw" : blob.style.top = "45vw";
 }
 
 window.addEventListener("scroll", changeCss, false);
+
+function parallax() {
+    var s = document.getElementById("last");
+    var yPos = 0 - window.pageYOffset / 6.4;
+    s.style.top = 0 + yPos + "%";
+}
+
+function parallax1() {
+    var l = document.getElementById("left");
+    var yPosition = 0 - window.pageYOffset / 9;
+    l.style.top = 0 + yPosition + "%";
+}
+
+window.addEventListener("scroll", function () {
+    parallax1();
+    parallax();
+});
+

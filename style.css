@@ -634,12 +634,12 @@ a {
 
 .vr {
     width: 2px;
-    background: linear-gradient(#00000000, #00000000, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #00000000, #00000000, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #00000000);
+    background: linear-gradient(#00000000, #00000000, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #00000000, #00000000, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #3c425c, #00000000);
     margin-left: 4px;
 }
 
 #eduvr {
-    background: linear-gradient(#00000000, #00000000, #00000000, #00000000, #3c425c, #3c425c, #3c425c, #00000000, #00000000, #00000000, #3c425c, #3c425c, #3c425c, #00000000, #00000000, #00000000, #3c425c, #3c425c, #3c425c, #00000000);
+    background: linear-gradient( #00000000,#00000000,#00000000, #3c425c, #3c425c, #3c425c, #00000000, #00000000, #3c425c, #3c425c,#3c425c, #3c425c, #00000000, #00000000, #3c425c,#3c425c, #3c425c, #3c425c, #00000000);
 }
 
 .timeline {
@@ -737,7 +737,7 @@ code{
 .pet{
     height: 7px;
     width: 7px;
-    background-color: #006151;
+    background-color: #00fdd3;
     position: fixed;
     border-radius: 2px;
     z-index: -10;
@@ -756,19 +756,19 @@ code{
         top:80vh;
         left:50vw;
         opacity: 1;
-        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     20%{
         top:95vh;
         left:0vw;
         opacity: 1;
-        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     30%{
         top:60vh;
         left:96vw;
         opacity: 1;
-        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     40%{
         top:80vh;
@@ -777,35 +777,35 @@ code{
         box-shadow: none;
     }
     50%{
-        opacity: 0;
-        box-shadow: 0 0 20px #006151;
+        opacity: 1;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     60%{
         top:0;
         left:95vw;
-        opacity: 0.2;
+        opacity: 0.7;
         box-shadow: none;
     }
     70%{
         top:20vh;
         left:1vw;
         opacity: 1;
-        box-shadow: 0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151,0 0 20px #006151;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     80%{
         top:20vh;
         left:50vw;
-        box-shadow: 0 0 10px #006151;
+        box-shadow: 0 0 10px #00cfad;
     }
     90%{
         top:60vh;
         left:30vw;
-        box-shadow: 0 0 20px #006151,0 0 20px #006151;
+        box-shadow: 0 0 20px #00fdd3,0 0 20px #00fdd3;
     }
     100%{
         top:50vh;
         left:-10vw;
-        opacity: 0;
+        opacity: 0.5;
         box-shadow: none;
     }
 }

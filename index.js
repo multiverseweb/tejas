@@ -54,19 +54,26 @@ function changeCss() {
 window.addEventListener("scroll", changeCss, false);
 
 function parallax() {
-    var s = document.getElementById("last");
-    var yPos = 0 - window.pageYOffset / 6.4;
+    var s = document.getElementById("middle");
+    var yPos = 0 - window.pageYOffset / -18;
     s.style.top = 0 + yPos + "%";
 }
 
 function parallax1() {
-    var l = document.getElementById("left");
-    var yPosition = 0 - window.pageYOffset / 9;
+    var l = document.getElementById("last");
+    var yPosition = 0 - window.pageYOffset / 4.5;
     l.style.top = 0 + yPosition + "%";
+}
+
+function parallax2() {
+    var left = document.getElementById("left");
+    var yP = 0 - window.pageYOffset / 8.4;
+    left.style.top = 0 + yP + "%";
 }
 
 window.addEventListener("scroll", function () {
     parallax1();
     parallax();
+    parallax2();
 });
 

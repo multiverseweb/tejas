@@ -55,19 +55,19 @@ window.addEventListener("scroll", changeCss, false);
 
 function parallax() {
     var s = document.getElementById("middle");
-    var yPos = 0 - window.pageYOffset / -18;
+    var yPos = 0 - window.pageYOffset / 30;
     s.style.top = 0 + yPos + "%";
 }
 
 function parallax1() {
     var l = document.getElementById("last");
-    var yPosition = 0 - window.pageYOffset / 4.5;
+    var yPosition = 0 - window.pageYOffset / 30;
     l.style.top = 0 + yPosition + "%";
 }
 
 function parallax2() {
     var left = document.getElementById("left");
-    var yP = 0 - window.pageYOffset / 8.4;
+    var yP = 0 - window.pageYOffset / 7;
     left.style.top = 0 + yP + "%";
 }
 

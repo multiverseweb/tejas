@@ -665,7 +665,7 @@ a {
     position: relative;
     width: 100vw;
     bottom: 20px;
-    margin-top: 190px;
+    margin-top: 280px;
     height: 20px;
     display: flex;
     flex-direction: row;
@@ -724,7 +724,7 @@ code {
     display: none;
 }
 
-.pet {
+.infinity {
     height: 7px;
     width: 7px;
     background-color: #00fdd3;
@@ -734,7 +734,7 @@ code {
     animation-iteration-count: infinite;
     animation-name: move;
     animation-timing-function: ease-in-out;
-    animation-duration: 60s;
+    animation-duration: 100s;
 }
 
 @keyframes move {
@@ -809,6 +809,31 @@ code {
         opacity: 0.5;
         box-shadow: none;
     }
+}
+
+.exp{
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+.orglogo{
+    height: 25px;
+    padding: 10px;
+    display: block;
+}
+.role{
+    margin-top: 9px;
+    font-weight: 500;
+    display: block;
+}
+.date{
+    position: absolute;
+    display: block;
+}
+.country{
+   display: block;
+   text-align: right;
 }
 
 /*======================================RESPONSIVE=======================================*/
@@ -1129,6 +1154,9 @@ code {
         width: 75vw;
         margin-top: 20px;
     }
+    #resume{
+        margin-left: 5vw;
+    }
 
     #move {
         margin-top: 10px;
@@ -1224,13 +1252,16 @@ code {
     #myBtn {
         right: 10px;
     }
+    .infinity{
+        animation-duration: 60s;
+    }
 }
 
 .indent {
     margin-left: -10px;
     padding-left: 15px;
     border-image: linear-gradient(#00000000, #3c425c, #3c425c, #3c425c, #00000000) 1;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-top-style: none;
     border-bottom-style: none;
@@ -1241,3 +1272,4 @@ code {
     margin-top: 10px;
     padding-bottom: 20px;
 }
+

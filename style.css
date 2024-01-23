@@ -508,6 +508,9 @@ input:hover::-webkit-input-placeholder {
 .certificate:hover {
     filter: brightness(1);
 }
+#resumephoto:hover{
+    scale: 1.01;
+}
 
 #move {
     margin-top: 10px;

@@ -608,7 +608,6 @@ a {
     font-size: 0.7rem;
     margin-top: -1rem;
     margin-bottom: 20px;
-    opacity: 0.7;
 }
 #htmltag{
     background:linear-gradient(to right,#E44D26, #f1d329);
@@ -643,7 +642,9 @@ a {
     color:#00a6d4;
 }
 #blendertag{
-    color: orange;
+    background:linear-gradient(to right,rgb(255, 247, 0), orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*============================Side=====================*/
@@ -778,7 +779,7 @@ code {
     background-color: #00fdd3;
     position: fixed;
     border-radius: 2px;
-    z-index: -10;
+    z-index: -6;
     animation-iteration-count: infinite;
     animation-name: move;
     animation-timing-function: ease-in-out;
@@ -792,11 +793,10 @@ code {
     width: max-content;
     padding: 2px;
     border-radius: 2px;
-    z-index: 1000;
     opacity: 0;
     transition-duration: 0.3s;
     transition-delay: 0.2s;
-    margin-left: 10px;
+    margin-left: -80px;
 }
 .infinity:hover{
     animation-play-state: paused;

@@ -32,10 +32,10 @@ function hide() {
     document.getElementById("blind").style.height = "0";
     document.getElementById("right").style.opacity = 0;
     document.getElementById("share").style.opacity = 0;
-    document.getElementById("share").style.right = "-25vw";
+    document.getElementById("share").style.right = "-80vw";
     document.getElementById("by").style.opacity = 0;
     document.getElementById("by").style.transitionDelay = "0s";
-    document.getElementById("right").style.left = "-25vw";
+    document.getElementById("right").style.left = "-80vw";
     document.getElementById("show").style = "display:block";
     document.getElementById("hide").style = "display:none";
 }

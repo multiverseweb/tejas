@@ -894,7 +894,7 @@ code {
         position: fixed;
         border-radius: 5px;
         top: 40vh;
-        right: -25vw;
+        right: -80vw;
         width: 85vw;
         height: auto;
         padding: 8px;
@@ -1008,6 +1008,7 @@ code {
 
     #right {
         display: none;
+        left: -80vw;
     }
 
     #hide {

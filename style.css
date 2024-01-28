@@ -530,6 +530,7 @@ a {
 
 /*=================================PROJECTS==============================*/
 .heading {
+    font-weight: 400;
     margin-top: 40px;
     text-align: center;
 }
@@ -599,7 +600,51 @@ a {
     z-index: -1;
     transform: rotate(270deg);
 }
-
+.tags{
+    display: flex;
+}
+.tags p{
+    margin-right: 10px;
+    font-size: 0.7rem;
+    margin-top: -1rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+#htmltag{
+    background:linear-gradient(to right,#E44D26, #f1d329);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+#csstag{
+    background:linear-gradient(to right,#264de4, rgb(0, 195, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#jstag{
+    background:linear-gradient(to right,#f0db4f, #5e8d00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#pythontag {
+    background:linear-gradient(to right,rgb(0, 149, 255), yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+#mysqltag{
+    background:linear-gradient(to right,teal, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#cpptag{
+    color:#0094d4;
+}
+#ctag{
+    color:#00a6d4;
+}
+#blendertag{
+    color: orange;
+}
 
 /*============================Side=====================*/
 .smallicon {
@@ -738,8 +783,28 @@ code {
     animation-name: move;
     animation-timing-function: ease-in-out;
     animation-duration: 100s;
+    cursor: pointer;
 }
-
+.chat{
+    font-size: 0.7rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.836);
+    width: max-content;
+    padding: 2px;
+    border-radius: 2px;
+    z-index: 1000;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+    margin-left: 10px;
+}
+.infinity:hover{
+    animation-play-state: paused;
+    z-index: 1000;
+}
+.infinity:hover .chat{
+    opacity: 1;
+}
 @keyframes move {
     0% {
         top: 50vh;
@@ -755,7 +820,7 @@ code {
     }
 
     20% {
-        top: 95vh;
+        top: 90vh;
         left: 0vw;
         opacity: 1;
         box-shadow: 0 0 20px #00fdd3, 0 0 20px #00fdd3, 0 0 20px #00fdd3, 0 0 20px #00fdd3;
@@ -1031,7 +1096,7 @@ code {
     .glass {
         width: 80vw;
         backdrop-filter: blur(9px);
-        background-color: #2326345e;
+        background-color: #181b2687;
         border-radius: 5px;
     }
 
@@ -1109,6 +1174,9 @@ code {
     #return {
         position: relative;
         margin-top: 40px;
+    }
+    .btn{
+        background-color: #0e1018;
     }
 
     .bg {

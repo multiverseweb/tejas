@@ -904,6 +904,43 @@ code {
    text-align: right;
 }
 
+
+
+.statistics {
+    display: flex;
+    margin-left: 5%;
+}
+
+.stats {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.names {
+    margin-top: -60px;
+    width: 20vw;
+    justify-content: space-around;
+    display: flex;
+    margin-left: 3%;
+}
+.pipe{
+    width: 1px;
+    background-color: white;
+    height: 100px;
+    position: absolute;
+    margin-top:-8.5rem;
+    margin-left: 45%;
+}
+#connections{
+    position: absolute;
+    left:12vw;
+}
+#top-more{
+    margin-bottom: -60px;
+}
+.newstats{
+    margin-top: 100px;
+}
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
@@ -1329,6 +1366,24 @@ code {
     .infinity{
         animation-duration: 60s;
     }
+
+
+    .statistics {
+        display: flex;
+        margin-left: 50%;
+        transform: translate(calc(-50% - 4rem));
+    }
+    .pipe{
+        margin-left: 50%;
+    }
+
+    
+    .names {
+        width: 85vw;
+    }
+    #connections{
+        left: 45vw;
+    }
 }
 
 .indent {
@@ -1346,3 +1401,4 @@ code {
     margin-top: 10px;
     padding-bottom: 20px;
 }
+

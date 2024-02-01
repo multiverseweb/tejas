@@ -76,3 +76,52 @@ window.addEventListener("scroll", function () {
     parallax();
     parallax2();
 });
+
+
+const targetCount2 = 5000;
+const targetCount = 27800;
+const counterElement = document.getElementById('loc');
+const counterElement2 = document.getElementById('connections');
+function updateCounter(count) {
+    counterElement.textContent = count;
+}
+function startCounter() {
+    let count = 27500;
+    const intervalId = setInterval(function () {
+        if (count < targetCount) {
+            count++;
+            updateCounter(count);
+        } else {
+            clearInterval2(intervalId);
+        }
+    }, 4);
+}
+
+
+function updateCounter2(count2) {
+    counterElement2.textContent = count2;
+}
+function startCounter2() {
+    let count2 = 4700;
+    const intervalId2 = setInterval(function () {
+        if (count2 < targetCount2) {
+            count2++;
+            updateCounter2(count2);
+        } else {
+            clearInterval(intervalId2);
+        }
+    }, 4);
+}
+
+
+
+var addFunctionOnWindowLoad = function(callback){
+    if(window.addEventListener){
+        window.addEventListener('load',callback,false);
+    }else{
+        window.attachEvent('onload',callback);
+    }
+}
+
+addFunctionOnWindowLoad(startCounter);
+addFunctionOnWindowLoad(startCounter2);

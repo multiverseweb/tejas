@@ -547,6 +547,9 @@ a {
 }
 
 .ss {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: 0%;
     width: 27vw;
     border-radius: 5px;
 }
@@ -602,6 +605,9 @@ a {
 }
 .tags{
     display: flex;
+    width: 23vw;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
 }
 .tags p{
     margin-right: 10px;
@@ -643,6 +649,22 @@ a {
 }
 #blendertag{
     background:linear-gradient(to right,rgb(255, 247, 0), orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#numpytag{
+    background:linear-gradient(to right, rgb(77, 171, 207),rgb(77, 119, 207));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#pandastag{
+    background:linear-gradient(to right,#150458, #FFCA00,#E70488);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#matplotlibtag{
+    background:linear-gradient(to right,#0b4a72, 
+    #71dbc4,#a3f5a0,#ffd95c,#fe9f5d,#dfff73,#728bc5);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1383,6 +1405,9 @@ code {
     }
     #connections{
         left: 45vw;
+    }
+    .tags{
+        width: 80vw;
     }
 }
 

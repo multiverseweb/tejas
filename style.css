@@ -538,8 +538,12 @@ a {
 .items {
     font-size: 20px;
     display: flex;
+    overflow: scroll;
     flex-direction: row;
-    justify-content: space-around;
+}
+.items > .glass{
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .buttons {

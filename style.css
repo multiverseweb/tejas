@@ -1418,6 +1418,9 @@ code {
     .tags{
         width: 80vw;
     }
+.items{
+overflow-x: hidden;
+}
 }
 
 .indent {

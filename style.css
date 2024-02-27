@@ -967,6 +967,10 @@ code {
 .newstats{
     margin-top: 100px;
 }
+.project_info{
+    display: flex;
+    margin-top: -15px;
+}
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
@@ -1218,7 +1222,8 @@ code {
     .items {
         flex-direction: column;
         justify-content: center;
-        margin-left: 2.5vw;
+        margin-left: -1vw;
+        overflow-x: hidden;
     }
 
     .items>.glass {

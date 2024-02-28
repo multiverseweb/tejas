@@ -672,6 +672,11 @@ a {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#bashtag{
+    background:linear-gradient(to right,rgb(63, 80, 108),rgb(63, 80, 108),rgb(63, 80, 108),green);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /*============================Side=====================*/
 .smallicon {

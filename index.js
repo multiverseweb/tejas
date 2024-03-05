@@ -1,3 +1,4 @@
+console.log("Tejas' Codes :)");
 function copy() {
     navigator.clipboard.writeText("https://multiverseweb.github.io/tejas/");
     document.getElementById("copy").innerHTML = "Copied!&nbsp;✓";

@@ -54,23 +54,24 @@ function changeCss() {
 
 window.addEventListener("scroll", changeCss, false);
 
+function parallax2() {
+    var left = document.getElementById("left");
+    var yP = 0 - window.scrollY / 13;
+    left.style.top = 0 + yP + "%";
+}
+
 function parallax() {
     var s = document.getElementById("middle");
-    var yPos = 0 - window.scrollY / 8;
+    var yPos = 0 - window.scrollY / 12;
     s.style.top = 0 + yPos + "%";
 }
 
 function parallax1() {
     var l = document.getElementById("last");
-    var yPosition = 0 - window.scrollY / 30;
+    var yPosition = 0 - window.scrollY / 100;
     l.style.top = 0 + yPosition + "%";
 }
 
-function parallax2() {
-    var left = document.getElementById("left");
-    var yP = 0 - window.scrollY / 9;
-    left.style.top = 0 + yP + "%";
-}
 
 window.addEventListener("scroll", function () {
     parallax1();

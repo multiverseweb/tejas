@@ -556,7 +556,7 @@ a {
     object-fit: cover;
     object-position: 0%;
     width: 27vw;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .btn {
@@ -1238,7 +1238,6 @@ code {
 
     .ss {
         width: 90vw;
-        border-radius: 15px;
     }
 
     .design-line {

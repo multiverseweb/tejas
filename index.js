@@ -1,6 +1,6 @@
 console.log("Tejas' Codes :)");
 function copy() {
-    navigator.clipboard.writeText("https://multiverseweb.github.io/tejas/");
+    navigator.clipboard.writeText("tejasgupta.netlify.app");
     document.getElementById("copy").innerHTML = "Copied!&nbsp;✓";
 }
 function show2() {

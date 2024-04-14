@@ -1447,3 +1447,24 @@ overflow-x: hidden;
 #badges{
     margin-left: 10px;
 }
+#badges > img{
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    height: 40px;
+    width: 30px;
+    object-position: 25% 0%;
+    object-fit: cover;
+    margin-left: -3px;
+}
+#badges > a>img{
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    height: 40px;
+    width: 30px;
+    object-position: 25% 0%;
+    object-fit: cover;
+    margin-left: -3px;
+}
+.weight{
+    font-weight: 400;
+}

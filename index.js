@@ -62,7 +62,7 @@ function parallax2() {
 
 function parallax() {
     var s = document.getElementById("middle");
-    var yPos = 0 - window.scrollY / 12;
+    var yPos = 0 - window.scrollY / 5.7;
     s.style.top = 0 + yPos + "%";
 }
 

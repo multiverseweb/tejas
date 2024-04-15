@@ -1450,7 +1450,7 @@ overflow-x: hidden;
 #badges > img{
     transition-duration: 0.2s;
     border-radius: 5px;
-    height: 40px;
+    height: 50px;
     width: 30px;
     object-position: 25% 0%;
     object-fit: cover;
@@ -1459,7 +1459,7 @@ overflow-x: hidden;
 #badges > a>img{
     transition-duration: 0.2s;
     border-radius: 5px;
-    height: 40px;
+    height: 50px;
     width: 30px;
     object-position: 25% 0%;
     object-fit: cover;

@@ -1454,7 +1454,7 @@ overflow-x: hidden;
     width: 30px;
     object-position: 25% 0%;
     object-fit: cover;
-    margin-left: -3px;
+    margin-left: -1px;
 }
 #badges > a>img{
     transition-duration: 0.2s;
@@ -1463,7 +1463,7 @@ overflow-x: hidden;
     width: 30px;
     object-position: 25% 0%;
     object-fit: cover;
-    margin-left: -3px;
+    margin-left: -1px;
 }
 .weight{
     font-weight: 400;

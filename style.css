@@ -500,6 +500,7 @@ input:hover::-webkit-input-placeholder {
 .certificate {
     width: 21.5vw;
     margin-left: 1vw;
+    aspect-ratio: 4/3;
     transition-duration: 0.5s;
     filter: brightness(0.8);
     margin-top: 20px;
@@ -507,6 +508,9 @@ input:hover::-webkit-input-placeholder {
 
 .certificate:hover {
     filter: brightness(1);
+}
+#resumephoto{
+    aspect-ratio:unset;
 }
 #resumephoto:hover{
     scale: 1.01;

@@ -429,74 +429,6 @@ input:hover::-webkit-input-placeholder {
     position: absolute;
 }
 
-#projects {
-    margin-top: 30px;
-}
-
-
-
-#projects>a {
-    transition-duration: 0.5s;
-    font-size: 18px;
-}
-
-#projects>a:hover {
-    transform: translateX(7px);
-}
-
-#type {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-#symbol {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-#skill {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    margin-bottom: 12px;
-    margin-right: 5px;
-}
-
-.python {
-    background-color: #F29111;
-}
-
-.mysql {
-    background-color: rgb(0, 117, 143);
-}
-
-.html {
-    background-color: rgb(209, 94, 0);
-}
-
-.css {
-    background-color: rgb(0, 112, 209);
-}
-
-.js {
-    background-color: rgb(255, 225, 0);
-}
-
-.cpp {
-    background-color: rgb(0, 123, 255);
-}
-
-.c {
-    background-color: rgb(0, 101, 209);
-}
-
-.markdown {
-    background-color: rgb(0, 163, 0);
-}
-
-
 .certificate {
     width: 21.5vw;
     margin-left: 1vw;
@@ -509,10 +441,12 @@ input:hover::-webkit-input-placeholder {
 .certificate:hover {
     filter: brightness(1);
 }
-#resumephoto{
-    aspect-ratio:unset;
+
+#resumephoto {
+    aspect-ratio: unset;
 }
-#resumephoto:hover{
+
+#resumephoto:hover {
     scale: 1.01;
 }
 
@@ -526,9 +460,8 @@ input:hover::-webkit-input-placeholder {
     transform: rotate(-4deg);
 }
 
-a {
-    color: rgba(255, 255, 255, 0.94);
-    font-family: 'Courier New', Courier, monospace;
+a{
+    color: white;
     font-size: 18px;
 }
 
@@ -545,7 +478,8 @@ a {
     overflow: scroll;
     flex-direction: row;
 }
-.items > .glass{
+
+.items>.glass {
     margin-left: 3vw;
     margin-right: 3vw;
 }
@@ -585,6 +519,86 @@ a {
     left: 0;
     top: 20vh;
 }
+table{
+    width: 100%;
+    overflow-x: scroll;
+}
+td{
+    border-bottom: 1px solid #1b1d2900;
+}
+tr:nth-child(even) {
+    background-color: #1b1d2977;
+}
+tr:hover{
+    background-color: rgba(0, 255, 247, 0.284);
+}
+#projects {
+    margin-top: 30px;
+}
+
+
+
+#projects a {
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin-left: 10px;
+}
+
+#type {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#symbol {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#skill {
+    height: 8px;
+    width: 8px;
+    border-radius: 35%;
+    margin-bottom: 12px;
+    margin-right: 5px;
+}
+
+.python {
+    background-color: #F29111;
+}
+
+.mysql {
+    background-color: rgb(0, 117, 143);
+}
+
+.html {
+    background-color: rgb(209, 94, 0);
+}
+
+.css {
+    background-color: rgb(0, 112, 209);
+}
+
+.js {
+    background-color: rgb(255, 225, 0);
+}
+
+.cpp {
+    background-color: rgb(0, 123, 255);
+}
+
+.c {
+    background-color: rgb(0, 101, 209);
+}
+
+.markdown {
+    background-color: rgb(0, 163, 0);
+}
+
+
 
 #return {
     background: #222533;
@@ -606,79 +620,93 @@ a {
 
 .bgcerti {
     position: absolute;
-    height: 50vh;
+    height: 60vh;
     bottom: 0;
     right: 0;
     z-index: -1;
     transform: rotate(270deg);
 }
-.tags{
+
+.tags {
     display: flex;
     width: 23vw;
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
-.tags p{
+
+.tags p {
     margin-right: 10px;
     font-size: 0.7rem;
     margin-top: -1rem;
     margin-bottom: 20px;
 }
-#htmltag{
-    background:linear-gradient(to right,#E44D26, #f1d329);
+
+#htmltag {
+    background: linear-gradient(to right, #E44D26, #f1d329);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  
+
 }
-#csstag{
-    background:linear-gradient(to right,#264de4, rgb(0, 195, 255));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#jstag{
-    background:linear-gradient(to right,#f0db4f, #5e8d00);
+
+#csstag {
+    background: linear-gradient(to right, #264de4, rgb(0, 195, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+#jstag {
+    background: linear-gradient(to right, #f0db4f, #5e8d00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #pythontag {
-    background:linear-gradient(to right,rgb(0, 149, 255), yellow);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-#mysqltag{
-    background:linear-gradient(to right,teal, orange);
+    background: linear-gradient(to right, rgb(0, 149, 255), yellow);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#cpptag{
-    color:#0094d4;
-}
-#ctag{
-    color:#00a6d4;
-}
-#blendertag{
-    background:linear-gradient(to right,rgb(255, 247, 0), orange);
+
+#mysqltag {
+    background: linear-gradient(to right, teal, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#numpytag{
-    background:linear-gradient(to right, rgb(77, 171, 207),rgb(77, 119, 207));
+
+#cpptag {
+    color: #0094d4;
+}
+
+#ctag {
+    color: #00a6d4;
+}
+
+#blendertag {
+    background: linear-gradient(to right, rgb(255, 247, 0), orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#pandastag{
-    background:linear-gradient(to right,#150458, #FFCA00,#E70488);
+
+#numpytag {
+    background: linear-gradient(to right, rgb(77, 171, 207), rgb(77, 119, 207));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#matplotlibtag{
-    background:linear-gradient(to right,#0b4a72, 
-    #71dbc4,#a3f5a0,#ffd95c,#fe9f5d,#dfff73,#728bc5);
+
+#pandastag {
+    background: linear-gradient(to right, #150458, #FFCA00, #E70488);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#bashtag{
-    background:linear-gradient(to right,rgb(63, 80, 108),rgb(63, 80, 108),rgb(63, 80, 108),green);
+
+#matplotlibtag {
+    background: linear-gradient(to right, #0b4a72,
+            #71dbc4, #a3f5a0, #ffd95c, #fe9f5d, #dfff73, #728bc5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#bashtag {
+    background: linear-gradient(to right, rgb(63, 80, 108), rgb(63, 80, 108), rgb(63, 80, 108), green);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -822,7 +850,8 @@ code {
     animation-duration: 100s;
     cursor: pointer;
 }
-.chat{
+
+.chat {
     font-size: 0.7rem;
     color: black;
     background-color: rgba(255, 255, 255, 0.836);
@@ -834,13 +863,16 @@ code {
     transition-delay: 0.2s;
     margin-left: -80px;
 }
-.infinity:hover{
+
+.infinity:hover {
     animation-play-state: paused;
     z-index: 1000;
 }
-.infinity:hover .chat{
+
+.infinity:hover .chat {
     opacity: 1;
 }
+
 @keyframes move {
     0% {
         top: 50vh;
@@ -915,29 +947,33 @@ code {
     }
 }
 
-.exp{
+.exp {
     display: flex;
     flex-direction: row;
     margin-left: -15px;
     margin-top: 5px;
 }
-.orglogo{
+
+.orglogo {
     height: 25px;
     padding: 10px;
     display: block;
 }
-.role{
+
+.role {
     margin-top: 9px;
     font-weight: 500;
     display: block;
 }
-.date{
+
+.date {
     position: absolute;
     display: block;
 }
-.country{
-   display: block;
-   text-align: right;
+
+.country {
+    display: block;
+    text-align: right;
 }
 
 
@@ -959,28 +995,34 @@ code {
     display: flex;
     margin-left: 3%;
 }
-.pipe{
+
+.pipe {
     width: 1px;
     background-color: white;
     height: 100px;
     position: absolute;
-    margin-top:-8.5rem;
+    margin-top: -8.5rem;
     margin-left: 45%;
 }
-#connections{
+
+#connections {
     position: absolute;
-    left:12vw;
+    left: 12vw;
 }
-#top-more{
+
+#top-more {
     margin-bottom: -60px;
 }
-.newstats{
+
+.newstats {
     margin-top: 100px;
 }
-.project_info{
+
+.project_info {
     display: flex;
     margin-top: -15px;
 }
+
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
@@ -1252,7 +1294,8 @@ code {
         position: relative;
         margin-top: 40px;
     }
-    .btn{
+
+    .btn {
         background-color: #0e1018;
     }
 
@@ -1302,7 +1345,8 @@ code {
         width: 75vw;
         margin-top: 20px;
     }
-    #resume{
+
+    #resume {
         margin-left: 5vw;
     }
 
@@ -1360,7 +1404,7 @@ code {
         width: 100vw;
         position: absolute;
         bottom: 90px;
-        left:50%;
+        left: 50%;
         transform: translate(-50%);
     }
 
@@ -1403,7 +1447,8 @@ code {
     #myBtn {
         right: 10px;
     }
-    .infinity{
+
+    .infinity {
         animation-duration: 60s;
     }
 
@@ -1413,23 +1458,27 @@ code {
         margin-left: 50%;
         transform: translate(calc(-50% - 4rem));
     }
-    .pipe{
+
+    .pipe {
         margin-left: 50%;
     }
 
-    
+
     .names {
         width: 85vw;
     }
-    #connections{
+
+    #connections {
         left: 45vw;
     }
-    .tags{
+
+    .tags {
         width: 80vw;
     }
-.items{
-overflow-x: hidden;
-}
+
+    .items {
+        overflow-x: hidden;
+    }
 }
 
 .indent {
@@ -1448,10 +1497,11 @@ overflow-x: hidden;
     padding-bottom: 20px;
 }
 
-#badges{
+#badges {
     margin-left: 10px;
 }
-#badges > img{
+
+#badges>img {
     transition-duration: 0.2s;
     border-radius: 5px;
     height: 50px;
@@ -1460,7 +1510,8 @@ overflow-x: hidden;
     object-fit: cover;
     margin-left: 2px;
 }
-#badges > a>img{
+
+#badges>a>img {
     transition-duration: 0.2s;
     border-radius: 5px;
     height: 50px;
@@ -1469,6 +1520,7 @@ overflow-x: hidden;
     object-fit: cover;
     margin-left: 2px;
 }
-.weight{
+
+.weight {
     font-weight: 400;
 }

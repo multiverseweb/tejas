@@ -56,7 +56,7 @@ window.addEventListener("scroll", changeCss, false);
 
 function parallax2() {
     var left = document.getElementById("left");
-    var yP = 0 - window.scrollY / 13;
+    var yP = 0 - window.scrollY / 35;
     left.style.top = 0 + yP + "%";
 }
 

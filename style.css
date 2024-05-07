@@ -1043,9 +1043,24 @@ code {
     margin-top: -15px;
 }
 
+.visits{
+    flex-direction: row;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width:max-content;
+    margin-top: -20px;
+    display: none;
+}
+.visits p{
+    margin-top: 22px;
+}
+
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
+    .visits{
+        display: flex;
+    }
 
     body {
         background-color: #000000;
@@ -1422,8 +1437,7 @@ code {
 
     .icons {
         width: 100vw;
-        position: absolute;
-        bottom: 90px;
+        margin-top: -50px;
         left: 50%;
         transform: translate(-50%);
     }
@@ -1432,6 +1446,7 @@ code {
         width: 80vw;
         left: 7vw;
         margin-top: 55px;
+        margin-top: 90px;
     }
 
     input {
@@ -1446,10 +1461,11 @@ code {
     .credits {
         display: block;
         position: absolute;
-        bottom: 5vh;
+        margin-top: 350px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 13px;
+        padding-bottom: 50px;
     }
 
     .align {

@@ -423,6 +423,15 @@ input:hover::-webkit-input-placeholder {
     z-index: -1;
 }
 
+.design_bg{
+    height: 65vh;
+    position: fixed;
+    transform: rotate(-45deg);
+    bottom:-50px;
+    right: -300px;
+    z-index: -1;
+}
+
 .icons {
     right: 8px;
     bottom: 8px;
@@ -596,7 +605,9 @@ tr:hover{
 .c {
     background-color: rgb(0, 101, 209);
 }
-
+.figma{
+    background-color: rgb(255,114,98);
+}
 .markdown {
     background-color: rgb(0, 163, 0);
 }
@@ -685,6 +696,12 @@ tr:hover{
 
 #blendertag {
     background: linear-gradient(to right, rgb(255, 247, 0), orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#figmatag {
+    background: linear-gradient(to right, #f24e1e, #ff7262, #a259ff,#1abcfe, #0acf83);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

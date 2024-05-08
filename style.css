@@ -1428,16 +1428,19 @@ code {
     footer {
         position: relative;
         left: -10px;
-        height: 60vh;
+        height: 65vh;
         text-align: center;
         border-radius: 15px 15px 0px 0px;
         width: 101vw;
-        background-color: #00000000;
+        background-color: #ffffff00;
+        padding-bottom: 30px;
+        backdrop-filter: blur(14px);
     }
 
     .icons {
+        position: relative;
         width: 100vw;
-        margin-top: -50px;
+        margin-top: 300px;
         left: 50%;
         transform: translate(-50%);
     }
@@ -1445,8 +1448,7 @@ code {
     form {
         width: 80vw;
         left: 7vw;
-        margin-top: 55px;
-        margin-top: 90px;
+        margin-top: 75px;
     }
 
     input {
@@ -1460,12 +1462,10 @@ code {
 
     .credits {
         display: block;
-        position: absolute;
-        margin-top: 350px;
-        left: 50%;
+        margin-top: 20px;
+        margin-left: 50%;
         transform: translateX(-50%);
         font-size: 13px;
-        padding-bottom: 50px;
     }
 
     .align {

@@ -21,6 +21,16 @@ body {
     width: 0;
 }
 
+#progress_bar{
+    position: fixed;
+    top:50px;
+    width: 0vw;
+    left:0;
+    height: 2px;
+    background-color: #656f9a;
+    z-index: 100;
+    display: none;
+}
 .navbar2 {
     backdrop-filter: blur(8px);
     background-color: #23263481;
@@ -1058,6 +1068,9 @@ code {
 /*======================================RESPONSIVE=======================================*/
 
 @media screen and (max-width: 900px) {
+    #progress_bar{
+        display: block;
+    }
     .visits{
         display: flex;
     }

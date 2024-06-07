@@ -21,7 +21,7 @@
         document.getElementById('model-container').appendChild(renderer.domElement);
 
         var loader = new THREE.GLTFLoader();
-        loader.load('spaceshuttle.glb', function (gltf) {
+        loader.load('resoutces/spaceshuttle.glb', function (gltf) {
             gltf.scene.traverse(function (child) {
                 if (child.isMesh) {
                     if (!child.material) {

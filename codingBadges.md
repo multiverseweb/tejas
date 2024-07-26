@@ -1,3 +1,4 @@
+# Coding Badges
 |________________|________________|________________|________________|________________|________________|
 |-|-|-|-|-|-|
 |LeetCode| <img height=100px width=100px src='Badges/leetcode-2024-50-lg.png'> |<img height=100px width=100px src='Badges/leetcode-Introduction_to_Pandas_Badge.png'>||||

@@ -588,6 +588,10 @@ tr:hover{
     margin-right: 5px;
 }
 
+.skills_table img{
+    filter: saturate(0.7);
+}
+
 .python {
     background-color: #F29111;
 }
@@ -1411,6 +1415,9 @@ code {
 
     #skill {
         margin-top: 20px;
+    }
+    #skills_div{
+        margin-left: 5vw;
     }
 
     #type {

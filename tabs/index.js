@@ -62,19 +62,19 @@ window.addEventListener("scroll", changeCss, false);
 
 function parallax2() {
     var left = document.getElementById("left");
-    var yP = 0 - window.scrollY / 35;
+    var yP = 0 - window.scrollY / 8;
     left.style.top = 0 + yP + "%";
 }
 
 function parallax() {
     var s = document.getElementById("middle");
-    var yPos = 0 - window.scrollY / 9;
+    var yPos = 0 - window.scrollY / 18;
     s.style.top = 0 + yPos + "%";
 }
 
 function parallax1() {
     var l = document.getElementById("last");
-    var yPosition = 0 - window.scrollY / 100;
+    var yPosition = 0 - window.scrollY / 150;
     l.style.top = 0 + yPosition + "%";
 }
 
